@@ -35,11 +35,26 @@ a{
 .btn:hover{
     opacity: 0.7;
 }
+
+.section-heading{
+    color: #10375C;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2; /* 120% */
+    letter-spacing: -1px;
+}
+.section-desc{
+    margin-top: 18px;
+    color: #575F66;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.67; /* 166.667% */
+}
 /* =========================header=========================== */
 .header{
     padding-top: 30px;
     background: var(--header-bg);
-    min-height: 100vh;
+    min-height: vh;
 
 }
 .header-top{
@@ -140,7 +155,59 @@ line-height: 1.67; /* 166.667% */
 .hero__img-small{
     /* margin-top: 141px; */
     width: 210px;
-    height: 410px;
-    
-    
+    height: 410px;  
+}
+.service{
+    padding-top: 170px;
+}
+.service__heading,.service__desc{
+    text-align: center;
+}
+.service__desc{
+    width: 468px;
+    margin: 0 auto; 
+}
+.service__row{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.service__img{
+    width: 570px;
+    height: 570px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+.service-item{
+    padding: 21px;
+    display: flex;
+    width: 470px;
+    border-radius: 10px;
+    background: #fff; 
+}
+.service-item:hover{
+position: relative;
+box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 1);
+}
+.service-item__icon{
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #EFF6FD;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 19px;
+    transition: 0.25;
+}
+.service-item:hover .service-item__icon{
+    color: #fff;
+    background: #2E80CE;
+}
+.service__btn{
+    margin-top: 55px;
 }
